@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyPortfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= javascript_pack_tag 'audio' %>
+    
+    <div class="row">
+      <div class="col-md-3">
+        <%= render 'shared/lateral_menu' %>
+      </div>
+
+      <div class="col-md-9">
+        <%= yield %>
+      </div>
+    </div>
+
+  </body>
+</html>

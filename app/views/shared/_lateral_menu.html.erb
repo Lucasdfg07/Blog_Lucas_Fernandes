@@ -1,0 +1,38 @@
+<div class="lateral_menu text-center">
+    <div class="page-header mt-3 mb-3">
+        <%= image_tag 'logo' %>
+    </div>
+
+    <ul class="me-4">
+        <li>
+            <%= link_to root_path, onclick: "pauseAudio()" do %>
+                HOME
+            <% end %>
+        </li>
+        
+        <li>
+            <%= link_to blogs_path do %>
+                BLOG
+            <% end %>
+        </li>
+
+        <li>MEUS PROJETOS</li>
+        <li>CURRÍCULO</li>
+    </ul>
+
+    <div class="social_media text-center">
+        <div class="row">
+            <div class="col">
+                <%= link_to '#' do %>
+                    <%= image_tag 'youtube' %>
+                <% end %>
+            </div>
+
+            <div class="col">
+                <%= link_to '#' do %>
+                    <%= image_tag 'whatsapp' %>
+                <% end %>
+            </div>  
+        </div>
+    </div>
+</div>
