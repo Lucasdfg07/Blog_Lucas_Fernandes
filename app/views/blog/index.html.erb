@@ -1,0 +1,29 @@
+<%= javascript_pack_tag 'search' %>
+
+<div class="container col-8 offset-2">
+  <div class="search mt-4 mb-4 text-center">
+    <%= form_with(model: Post.last) do |f| %>
+      <%= f.collection_select :post_id, Post.all, :id, :title, {include_blank: "Selecione sobre o que quer saber"}, id: 'dropdown' %>
+    <% end %>
+  </div>
+
+  <div class="posts">
+    <% Post.all.each do |post| %>
+      <div class="post">
+        <%= image_tag 'bill_gates_phrase' %>
+
+        <div class="pt-1 page-header text-center">
+          <%= post.title %>
+        </div>
+
+        <div class="post-body ps-2 pe-2">
+          <%= truncate(post.content, length: 120, omission: "...") %>
+        </div>
+
+        <div class="see_more">
+          <%= link_to 'Ver Mais', post_path(post), class: 'btn btn-danger me-3' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    registrations: 'users/registrations'
+  }
+
   root 'home#index'
 
-  resources :blogs, only: [:index]
+  resources :blog, only: [:index]
+  resources :posts, except: [:index]
 end

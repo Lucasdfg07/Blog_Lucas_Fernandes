@@ -4,10 +4,10 @@
     width: inherit;
     height: 100vh;
     box-shadow: 2px 2px 10px rgba(245,245,245,0.2);
+    left: 0;
 
     color: white;
     font-size: 2rem;
-    font-family: 'Scope One', serif;
 
     img {
         width: 200px;
@@ -31,7 +31,11 @@
 
     .social_media {
         img {
-            width: 80px;
+            width: 40px;
+            background-color: white;
+            border-radius: 100%;
+            padding: 3px;
+            box-shadow: 0px 0px 10px rgba(245,245,245,0.3);
         }
     }
 }
