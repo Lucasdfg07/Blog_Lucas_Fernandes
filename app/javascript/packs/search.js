@@ -13,10 +13,10 @@ $(document).on('turbolinks:load', function() {
 
 $(document).ready(function() {
     let placeholder_digit = $('.select2-selection__rendered')
+    
     placeholder_digit.html(placeholder_digit[0].outerText + '<span class="pointer">|</span>')
-    window.setInterval(setPointer, 800);
+    
+    setInterval(function(){ 
+      $('.pointer').toggle()
+    }, 800);
 })
-
-function setPointer() {
-  $('.pointer').toggle();
-}
