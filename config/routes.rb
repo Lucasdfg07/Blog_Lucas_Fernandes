@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :blog, only: [:index]
+  resources :portfolio, only: [:index]
   resources :posts, except: [:index] do
     resources :comments
   end
