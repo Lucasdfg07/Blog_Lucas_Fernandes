@@ -1,23 +1,21 @@
 <%= javascript_pack_tag 'search' %>
 
-<div class="container col-8 offset-2">
+<div class="container col-md-8 offset-md-2">
   <div class="search mt-4 mb-4 text-center">
-    <%= form_with(model: Post.last) do |f| %>
-      <%= f.collection_select :post_id, Post.all, :id, :title, {include_blank: "Selecione sobre o que quer saber"}, id: 'dropdown' %>
-    <% end %>
+    <%= select(nil, :post_id, Post.all.collect {|mt| [ mt.title, mt.id ] }, {:include_blank => 'Selecione sobre o que quer saber'}, id: 'dropdown', onchange: 'redirect_to_record()') %>
   </div>
 
   <div class="posts">
-    <% Post.all.each do |post| %>
-      <div class="post">
-        <%= image_tag 'bill_gates_phrase' %>
+    <% @posts.each do |post| %>
+      <div class="post mt-4">
+        <%= image_tag post.banner_photo %>
 
         <div class="pt-1 page-header text-center">
           <%= post.title %>
         </div>
 
         <div class="post-body ps-2 pe-2">
-          <%= truncate(post.content, length: 120, omission: "...") %>
+          <%= post.content.to_plain_text.truncate(150) %>
         </div>
 
         <div class="see_more">
@@ -26,4 +24,13 @@
       </div>
     <% end %>
   </div>
+
+  <%= paginate @posts %>
 </div>
+
+<script>
+  function redirect_to_record() {
+    var post_index = document.getElementById("dropdown").value;
+    window.location.href = "/posts/" + post_index;
+  }
+</script>

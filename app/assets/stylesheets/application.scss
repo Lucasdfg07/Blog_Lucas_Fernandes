@@ -1,5 +1,6 @@
 @import "bootstrap/scss/bootstrap";
 @import "select2";
+@import "./actiontext.scss";
 @import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
 
 @import 'shared/lateral_menu';
@@ -13,4 +14,35 @@
 
 body {
   font-family: 'Scope One', serif;
+}
+
+.pagination {
+  font-size: 1.3rem;
+  margin-top: 20px;
+
+  .current {
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(10,10,10,0.9);
+    margin: 2px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: -5px;
+  }
+
+  a {
+    margin: 2px;
+    padding: 2px;
+    border-radius: 10px;
+    border: 2px solid rgba(200,10,10,0.8);
+    background-color: rgba(250,10,10,0.8);
+    text-decoration: none;
+    color: rgba(245,245,245,0.8);
+    transition: 0.4s;
+  }
+
+  a:hover {
+    border: 2px solid rgba(11, 43, 187, 0.9);
+    background-color: rgba(11, 43, 187, 0.9);
+    padding: 4px;
+  }
 }

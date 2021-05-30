@@ -1,0 +1,22 @@
+<%= form_with(model: @post) do |f| %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
+
+    <div class="field mt-2">
+        <%= f.label :titulo %>
+        <%= f.text_field :title, placeholder: 'Digite o Título do Post', class: 'form-control' %>
+    </div>
+
+    <div class="field mt-2">
+        <%= f.label :conteúdo %>
+        <%= f.rich_text_area :content, placeholder: 'Digite a Descrição', class: 'form-control' %>
+    </div>
+
+    <div class="field mt-2">
+        <%= f.label :banner %>
+        <%= f.file_field :banner, class: 'form-control' %>
+    </div>
+
+    <div class="actions mt-3 text-center">
+        <%= f.submit 'Enviar', class: 'btn btn-danger' %>
+    </div>
+<% end %>
