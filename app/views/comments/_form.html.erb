@@ -1,0 +1,23 @@
+<%= form_with(model: [@post, comment]) do |f| %>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+
+  <div class="row">
+    <div class="col-10">
+      <div class="field">
+        <%= f.text_field :name, placeholder: 'Digite seu nome!*', class: 'form-control', required: true %>
+      </div>
+
+      <div class="field mt-3">
+        <%= f.email_field :email, placeholder: 'Deixe seu email!*', class: 'form-control', required: true %>
+      </div>
+
+      <div class="field mt-3">
+        <%= f.rich_text_area :content, placeholder: 'Deixe seu comentário!*', class: 'form-control', required: true %>
+      </div>
+    </div>
+
+    <div class="col-2 send_comment_button">
+      <%= f.submit 'Enviar', class: 'btn btn-danger' %>
+    </div>
+  </div>
+<% end %>

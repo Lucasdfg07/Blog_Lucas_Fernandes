@@ -1,9 +1,19 @@
-<div class="container mt-4">
-    <h2>Comentários</h2>
+<div class="container mt-4 pb-4">
+    <h2>Participe do debate!</h2>
+    <h4>Deixe um comentário.</h4>
 
     <% @post.comments.each do |comment| %>
-        <div class="container">
-            <%= comment.content %>
+        <div class="container pb-3">
+            <%= image_tag "avatar/#{comment.avatar}", class: 'thumb' %>
+            <b><%= comment.name %></b>
+            
+            <div class="comment_content">
+                <%= sanitize comment.content %>
+            </div>
+
+            <hr />
         </div>
     <% end %>
+
+    <%= render 'comments/form', comment: @comment, commentable: @post %>
 </div>
