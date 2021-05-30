@@ -1,5 +1,5 @@
 <div class="container mt-4">
-    <div class="post_content text-center">
+    <div class="post_content">
         <div class="float-start go_back">
             <%= link_to blog_index_path, :"data-turbolinks" => false do %>
                 <%= image_tag 'back' %>
@@ -10,15 +10,15 @@
             <%= image_tag @post.banner_photo %>
         </div>
 
-        <div class="border-bottom pt-2 pb-1">
+        <div class="border-bottom pt-2 pb-1 text-center">
             <h1><%= @post.title %></h1>
         </div>
 
-        <div class="p-3">
+        <div class="p-3 text-center">
             <%= @post.content %>
         </div>
 
-        <div class="about_writer">
+        <div class="about_writer text-center">
             <div class="row">
                 <div class="col-md-4 pt-2 pb-2">
                     <%= image_tag @post.user.perfil_photo %>
@@ -32,5 +32,7 @@
                 </div>
             </div>
         </div>
+        
+        <%= render template: 'comments/index' %>
     </div>
 </div>
