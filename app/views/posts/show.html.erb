@@ -1,1 +1,36 @@
-oi
+<div class="container mt-4">
+    <div class="post_content text-center">
+        <div class="float-start go_back">
+            <%= link_to blog_index_path, :"data-turbolinks" => false do %>
+                <%= image_tag 'back' %>
+            <% end %>
+        </div>
+
+        <div class="post_header">
+            <%= image_tag @post.banner_photo %>
+        </div>
+
+        <div class="border-bottom pt-2 pb-1">
+            <h1><%= @post.title %></h1>
+        </div>
+
+        <div class="p-3">
+            <%= @post.content %>
+        </div>
+
+        <div class="about_writer">
+            <div class="row">
+                <div class="col-md-4 pt-2 pb-2">
+                    <%= image_tag @post.user.perfil_photo %>
+                </div>
+
+                <div class="col-md-8 pt-4">
+                    Desenvolvedor Full Stack especializado em Ruby On Rails.
+                    Sempre com novos projetos e entusiasta de novas metodologias e 
+                    tecnologias em prol de melhor qualidade para o desenvolvimento 
+                    de novos apps! \o/
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

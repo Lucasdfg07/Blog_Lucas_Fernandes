@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   resources :blog, only: [:index]
   resources :posts, except: [:index]
+
+  resources :youtube, only: :show
 end
