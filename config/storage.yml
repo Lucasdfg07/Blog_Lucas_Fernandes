@@ -4,4 +4,16 @@ test:
 
 local:
   service: Disk
-  root: <%= Rails.root.join("storage") %>
+  root: <%= Rails.root.join("tmp/storage") %>
+
+staging:
+  service: Disk
+  root: <%= Rails.root.join("tmp/storage") %>
+
+development:
+  service: Disk
+  root: <%= Rails.root.join("tmp/storage") %>
+
+production:
+  service: Disk
+  root: <%= Rails.root.join("tmp/storage") %>
