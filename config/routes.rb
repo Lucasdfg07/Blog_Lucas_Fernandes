@@ -13,4 +13,10 @@ Rails.application.routes.draw do
   end
 
   resources :youtube, only: :show
+
+  if Rails.env.development?
+    scope format: true, constraints: { format: /jpg|png|gif|PNG/ } do
+      get '/*anything', to: proc { [404, {}, ['']] }, constraints: lambda { |request| !request.path_parameters[:anything].start_with?('rails/') }
+    end
+  end
 end
