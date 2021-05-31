@@ -1,3 +1,6 @@
+<%= javascript_pack_tag 'social_media_hover' %>
+<%= javascript_pack_tag 'lateral_menu' %>
+
 <div class="lateral_menu text-center">
     <div class="page-header mt-3 mb-3">
         <%= image_tag 'logo' %>
@@ -16,23 +19,34 @@
             <% end %>
         </li>
 
-        <li>MEUS PROJETOS</li>
-        <li>CURRÍCULO</li>
+        <li>
+            <%= link_to portfolio_index_path do %>
+                SOBRE MIM
+            <% end %>
+        </li>
     </ul>
 
     <div class="social_media text-center">
         <div class="row">
-            <div class="col">
-                <%= link_to '#' do %>
+            <div class="col youtube_div">
+                <%= link_to 'https://www.youtube.com/channel/UCW7i1eD6-PVfHsBIfsGOkXA/videos' do %>
                     <%= image_tag 'youtube' %>
                 <% end %>
             </div>
 
-            <div class="col">
-                <%= link_to '#' do %>
+            <div class="col whatsapp_div">
+                <%= link_to 'https://chat.whatsapp.com/JPuhmuzg4lrEu9sBKW3B6B' do %>
                     <%= image_tag 'whatsapp' %>
                 <% end %>
             </div>  
+        </div>
+
+        <div class="youtube_phrase">
+            Acesse nosso canal do <b>Youtube</b> para mais conteúdos!
+        </div>
+
+        <div class="whatsapp_phrase">
+            Ou clique para entrar em nosso grupo no <b>Whatsapp</b>!
         </div>
     </div>
 </div>

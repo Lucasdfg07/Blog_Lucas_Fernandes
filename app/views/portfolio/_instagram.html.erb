@@ -1,0 +1,74 @@
+<div class="col-md-4">
+  <div class="card h-100">
+    <div id="instagramCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#instagramCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#instagramCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#instagramCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#instagramCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#instagramCarousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#instagramCarousel" data-bs-slide-to="5" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#instagramCarousel" data-bs-slide-to="6" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#instagramCarousel" data-bs-slide-to="7" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <%= image_tag 'projects/instagram/login', class: 'd-block w-100' %>
+        </div>
+        
+        <div class="carousel-item" data-bs-interval="2000">
+          <%= image_tag 'projects/instagram/posts', class: 'd-block w-100' %>
+        </div>
+        
+        <div class="carousel-item">
+          <%= image_tag 'projects/instagram/profile', class: 'd-block w-100' %>
+        </div>
+
+        <div class="carousel-item">
+          <%= image_tag 'projects/instagram/profile2', class: 'd-block w-100' %>
+        </div>
+
+        <div class="carousel-item">
+          <%= image_tag 'projects/instagram/search_user', class: 'd-block w-100' %>
+        </div>
+
+        <div class="carousel-item">
+          <%= image_tag 'projects/instagram/send_post', class: 'd-block w-100' %>
+        </div>
+
+        <div class="carousel-item">
+          <%= image_tag 'projects/instagram/followers', class: 'd-block w-100' %>
+        </div>
+
+        <div class="carousel-item">
+          <%= image_tag 'projects/instagram/sign_out', class: 'd-block w-100' %>
+        </div>
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#instagramCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      
+      <button class="carousel-control-next" type="button" data-bs-target="#instagramCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title"><b>Instagram Clone</b></h5>
+      <p class="card-text">
+        InstaClone is an application made with Ionic 3. How the name already says, 
+        It's a humble Instagram's Clone made in OneBitCode Super Full Stack course.
+      </p>
+    </div>
+
+    <div class="card-footer text-center">
+      <%= link_to 'https://github.com/Lucasdfg07/Instagram_clone' do %>
+        <%= image_tag 'github' %>
+      <% end %>
+    </div>
+  </div>
+</div>

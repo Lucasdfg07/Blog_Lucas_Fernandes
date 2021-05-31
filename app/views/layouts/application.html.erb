@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyPortfolio</title>
+    <%= display_meta_tags site: 'Rails Blog - Lucas Fernandes' %>
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= favicon_link_tag asset_path('/icons/favicon.ico') %>
   </head>
 
   <body>
     <%= javascript_pack_tag 'turbolinks_audio_stop' %>
+    
+    <!-- Menu button -->
+    <div class="mobile-lateral-menu">
+      <button class="navbar-toggler">
+        <%= image_tag 'programming' %>
+      </button>
+    </div>
     
     <div class="row application_row">
       <div class="col-md-3">

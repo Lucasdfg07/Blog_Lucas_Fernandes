@@ -1,0 +1,59 @@
+<div class="col-md-4">
+  <div class="card h-100">
+    <div id="spotifyCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#spotifyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#spotifyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#spotifyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#spotifyCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#spotifyCarousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <%= image_tag 'projects/spotify/home', class: 'd-block w-100' %>
+        </div>
+        
+        <div class="carousel-item" data-bs-interval="2000">
+          <%= image_tag 'projects/spotify/search', class: 'd-block w-100' %>
+        </div>
+        
+        <div class="carousel-item">
+          <%= image_tag 'projects/spotify/search_2', class: 'd-block w-100' %>
+        </div>
+
+        <div class="carousel-item">
+          <%= image_tag 'projects/spotify/play', class: 'd-block w-100' %>
+        </div>
+
+        <div class="carousel-item">
+          <%= image_tag 'projects/spotify/favorites', class: 'd-block w-100' %>
+        </div>
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#spotifyCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      
+      <button class="carousel-control-next" type="button" data-bs-target="#spotifyCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title"><b>Spotify Clone</b></h5>
+      <p class="card-text">
+        This application is an app clone of spotify made with Ruby (Back end) and ReactJS (Front end) to play musics, 
+        see artist's album, their music and made your day more musicable! Did on weekcode of OneBitCode.
+      </p>
+    </div>
+
+    <div class="card-footer text-center">
+      <%= link_to 'https://github.com/Lucasdfg07/Spotify_clone' do %>
+        <%= image_tag 'github' %>
+      <% end %>
+    </div>
+  </div>
+</div>

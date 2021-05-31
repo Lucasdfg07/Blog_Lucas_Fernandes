@@ -6,6 +6,8 @@ class User < ApplicationRecord
 
   has_one_attached :avatar
 
+  validates_presence_of :name, :email, :description, :avatar
+
   def perfil_photo
     if self.avatar.attached?
         self.avatar

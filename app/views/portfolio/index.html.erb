@@ -1,0 +1,53 @@
+<div class="mb-4 portfolio container">
+  <div class="col-4 offset-8 background_about mt-3">
+    Sobre
+  </div>
+
+  <div class="about_myself mt-4 text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag 'perfil' %>
+      </div>
+
+      <div class="col-md-8 p-4">
+        <p>
+          Programador, criador de conteúdo e um amante de disseminar a informação!
+        </p>
+
+        <p>
+          Boas vindas MÁXIMA a você que está aqui, e aprenda o máximo que puder!
+        </p>
+
+        <p>
+          Caso precise, me entre no nosso grupo clicando no ícone do <b>“Whatsapp”</b> 
+          no canto inferior esquerdo e me chame no nosso grupo \o/
+        </p>
+
+        <div class="text-center github_button">
+          <%= link_to "https://github.com/Lucasdfg07" do %>
+            <%= image_tag 'github' %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4 background_about mt-4">
+    Galeria
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+    <%= render 'portfolio/proffy' %>
+    <%= render 'portfolio/search_dev' %>
+    <%= render 'portfolio/spotify' %>
+    <%= render 'portfolio/tinder' %>
+    <%= render 'portfolio/nasa' %>
+    <%= render 'portfolio/instagram' %>
+  </div>
+
+  <div class="text-center github_button mt-4">
+    <%= link_to "https://github.com/Lucasdfg07?tab=repositories", class: 'btn btn-dark' do %>
+      See More <%= image_tag 'github' %>
+    <% end %>
+  </div>
+</div>

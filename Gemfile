@@ -15,6 +15,11 @@ gem 'kaminari'
 # Render image on ActionText
 gem 'image_processing', '~> 1.2'
 
+# SEO
+gem 'friendly_id'
+gem 'meta-tags'
+gem 'sitemap_generator'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use postgresql as the database for Active Record

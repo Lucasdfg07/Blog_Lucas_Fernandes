@@ -1,0 +1,61 @@
+<div class="col-md-4">
+  <div class="card h-100">
+    <div id="nasaCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#nasaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#nasaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#nasaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#nasaCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#nasaCarousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <%= image_tag 'projects/nasa/home', class: 'd-block w-100' %>
+        </div>
+        
+        <div class="carousel-item" data-bs-interval="2000">
+          <%= image_tag 'projects/nasa/graphic', class: 'd-block w-100' %>
+        </div>
+        
+        <div class="carousel-item">
+          <%= image_tag 'projects/nasa/graphic_2', class: 'd-block w-100' %>
+        </div>
+
+        <div class="carousel-item">
+          <%= image_tag 'projects/nasa/economy', class: 'd-block w-100' %>
+        </div>
+
+        <div class="carousel-item">
+          <%= image_tag 'projects/nasa/economy_2', class: 'd-block w-100' %>
+        </div>
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#nasaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      
+      <button class="carousel-control-next" type="button" data-bs-target="#nasaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="card-body">
+      <h5 class="card-title"><b>HARMEET - NASA Space Apps Covid-19 Edition</b></h5>
+      <p class="card-text">
+        HARMEET was developed seeking the development of a single plataform capable of 
+        gather a wide variety of data. Thereby, people will have greater access to these 
+        data, which are very important for understanding the pandemic, help decision-making 
+        by governments and the elaboration of solutions by the population.
+      </p>
+    </div>
+
+    <div class="card-footer text-center">
+      <%= link_to 'https://github.com/Lucasdfg07/NASA-space-apps-challenge' do %>
+        <%= image_tag 'github' %>
+      <% end %>
+    </div>
+  </div>
+</div>
