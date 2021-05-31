@@ -15,7 +15,7 @@
         </div>
 
         <div class="post_header">
-            <%= image_tag @post.banner_photo %>
+            <%= image_tag url_for(@post.banner_photo) %>
         </div>
 
         <div class="border-bottom pt-2 pb-1 text-center">
@@ -29,7 +29,7 @@
         <div class="about_writer text-center">
             <div class="row">
                 <div class="col-md-4 pt-2 pb-2">
-                    <%= image_tag @post.user.perfil_photo %>
+                    <%= image_tag url_for(@post.user.perfil_photo) %>
                 </div>
 
                 <div class="col-md-8 pt-4">
