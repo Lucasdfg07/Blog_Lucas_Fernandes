@@ -3,7 +3,7 @@
   description: @post.content.to_plain_text,
   type:     'article',
   url:      "https://lucas-fernandes.herokuapp.com/posts/#{@post.slug}",
-  image:    "https://lucas-fernandes.herokuapp.com/#{@post.banner_photo}",
+  image:    "https://lucas-fernandes.herokuapp.com/#{url_for(@post.banner_photo)}",
 } %>
 
 <div class="container mt-4">
