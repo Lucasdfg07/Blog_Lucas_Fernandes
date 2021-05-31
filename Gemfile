@@ -22,7 +22,7 @@ gem 'sitemap_generator'
 
 # AWS
 gem 'aws-sdk', '~> 2'
-gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
