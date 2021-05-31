@@ -21,7 +21,7 @@ gem 'meta-tags'
 gem 'sitemap_generator'
 
 # AWS
-gem 'aws-sdk', '~> 2'
+gem "aws-sdk-s3"
 gem 'dotenv-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
