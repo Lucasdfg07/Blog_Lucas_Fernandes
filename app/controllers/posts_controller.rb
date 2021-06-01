@@ -3,10 +3,12 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update]
 
   def new
+    authorize! :create, current_user
     @post = Post.new
   end
 
   def create
+    authorize! :create, current_user
     @post = Post.new(posts_params)
 
     if @post.save
@@ -21,6 +23,8 @@ class PostsController < ApplicationController
   end
 
   def update
+    authorize! :create, current_user
+
     if @post.update(posts_params)
       redirect_to blog_index_path, notice: 'Post atualizado com sucesso!'
     else

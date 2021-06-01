@@ -1,0 +1,27 @@
+<div class="dropdown user_perfil">
+  <% if current_user %>
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      <%= image_tag current_user.perfil_photo %>
+    </button>
+
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li>
+          <%= link_to 'Editar Perfil', edit_user_registration_path, class: "dropdown-item" %>
+      </li>
+
+      <li>
+          <%= link_to 'Publicar Novo Post', new_post_path, class: "dropdown-item" if current_user.admin? %>
+      </li>
+
+      <li>
+          <%= link_to 'Sair', destroy_user_session_path, class: "dropdown-item" %>
+      </li>
+    </ul>
+  <% else %>
+      <div class="sign_in">
+        <%= link_to new_user_session_path do %>
+          <%= image_tag 'anonymous' %>
+        <% end %>
+      </div>
+  <% end %>
+</div>

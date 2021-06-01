@@ -1,3 +1,4 @@
+<div class="offset-4 col-4 card text-center login">
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
@@ -21,7 +22,11 @@
     <% end %>
 
     <div class="field mt-2">
-      <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+      <%= f.label :password %> <br />
+      <small>(leave blank if you don't want to change it)</small>
+      
+      <br />
+      
       <%= f.password_field :password, autocomplete: "new-password" %>
       <% if @minimum_password_length %>
         <br />
@@ -35,11 +40,16 @@
     </div>
 
     <div class="field mt-2">
+      <%= f.label :avatar %><br />
       <%= f.file_field :avatar %>
     </div>
 
     <div class="actions mt-2">
-      <%= f.submit "Update" %>
+      <%= f.submit "Save" %>
     </div>
   <% end %>
-<%= render "devise/shared/links" %>
+
+  <div class="mt-4">
+    <%= render "devise/shared/links" %>
+  </div>
+</div>
