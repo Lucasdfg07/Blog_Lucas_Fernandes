@@ -17,6 +17,7 @@ class PostsController < ApplicationController
   end
 
   def edit
+    authorize! :edit, current_user
   end
 
   def update
