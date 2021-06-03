@@ -11,6 +11,13 @@
         <%= f.rich_text_area :content, placeholder: 'Digite a Descrição', class: 'form-control' %>
     </div>
 
+    <% if @post.slug.present? %>
+        <div class="field mt-2">
+            <%= f.label :url %>
+            <%= f.text_field :slug, class: 'form-control' %>
+        </div>
+    <% end %>
+
     <div class="field mt-2">
         <%= f.label :banner %>
         <%= f.file_field :banner, class: 'form-control' %>
