@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   end
 
   resources :youtube, only: :show
+
+  match '(*any)', to: redirect(subdomain: ''), via: :all, constraints: {subdomain: 'www'}
 end
