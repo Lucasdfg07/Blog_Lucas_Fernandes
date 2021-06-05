@@ -1,0 +1,35 @@
+/* line 1, app/assets/stylesheets/home.scss */
+body {
+  background-color: black;
+  background: url("/assets/bill_gates_phrase.jpg");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* line 9, app/assets/stylesheets/home.scss */
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+/* line 19, app/assets/stylesheets/home.scss */
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  /* line 28, app/assets/stylesheets/home.scss */
+  body {
+    background-size: cover;
+  }
+}

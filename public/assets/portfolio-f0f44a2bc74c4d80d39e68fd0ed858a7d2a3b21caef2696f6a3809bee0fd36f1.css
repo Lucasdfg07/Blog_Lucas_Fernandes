@@ -1,0 +1,53 @@
+/* line 2, app/assets/stylesheets/portfolio.scss */
+.portfolio .background_about {
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+/* line 10, app/assets/stylesheets/portfolio.scss */
+.portfolio .about_myself {
+  background-color: rgba(228, 214, 214, 0.8);
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+/* line 15, app/assets/stylesheets/portfolio.scss */
+.portfolio .about_myself .row > .col-md-4 {
+  background: url("/assets/background_about_myself.png");
+  padding: 10px;
+}
+
+/* line 19, app/assets/stylesheets/portfolio.scss */
+.portfolio .about_myself .row > .col-md-4 img {
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px rgba(245, 245, 245, 0.4);
+}
+
+/* line 26, app/assets/stylesheets/portfolio.scss */
+.portfolio .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 0.8rem;
+}
+
+/* line 33, app/assets/stylesheets/portfolio.scss */
+.portfolio .card-footer img {
+  background-color: white;
+  transition: 0.4s;
+}
+
+/* line 37, app/assets/stylesheets/portfolio.scss */
+.portfolio .card-footer img:hover {
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 44, app/assets/stylesheets/portfolio.scss */
+.portfolio .github_button img {
+  background-color: white;
+  border-radius: 100%;
+  padding: 2px;
+}
