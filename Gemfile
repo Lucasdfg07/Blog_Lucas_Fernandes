@@ -27,9 +27,6 @@ gem 'dotenv-rails'
 # Authorization
 gem 'cancancan'
 
-# Compress files to heroku
-gem 'heroku-deflater', :group => :production
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 # Use postgresql as the database for Active Record
