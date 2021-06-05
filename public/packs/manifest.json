@@ -1,0 +1,64 @@
+{
+  "application.js": "/packs/js/application-8797d0bc7369171053a0.js",
+  "application.js.map": "/packs/js/application-8797d0bc7369171053a0.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-8797d0bc7369171053a0.js"
+      ],
+      "js.map": [
+        "/packs/js/application-8797d0bc7369171053a0.js.map"
+      ]
+    },
+    "lateral_menu": {
+      "js": [
+        "/packs/js/lateral_menu-f14050b8867233a08d44.js"
+      ],
+      "js.map": [
+        "/packs/js/lateral_menu-f14050b8867233a08d44.js.map"
+      ]
+    },
+    "search": {
+      "js": [
+        "/packs/js/search-598cf2f8364bd03f7772.js"
+      ],
+      "js.map": [
+        "/packs/js/search-598cf2f8364bd03f7772.js.map"
+      ]
+    },
+    "social_media_hover": {
+      "js": [
+        "/packs/js/social_media_hover-11a93f4b775cf12c8f56.js"
+      ],
+      "js.map": [
+        "/packs/js/social_media_hover-11a93f4b775cf12c8f56.js.map"
+      ]
+    },
+    "turbolinks_audio_stop": {
+      "js": [
+        "/packs/js/turbolinks_audio_stop-e93bead7bf3865d41559.js"
+      ],
+      "js.map": [
+        "/packs/js/turbolinks_audio_stop-e93bead7bf3865d41559.js.map"
+      ]
+    },
+    "youtube": {
+      "js": [
+        "/packs/js/youtube-d3e74c9fee52f19c9d86.js"
+      ],
+      "js.map": [
+        "/packs/js/youtube-d3e74c9fee52f19c9d86.js.map"
+      ]
+    }
+  },
+  "lateral_menu.js": "/packs/js/lateral_menu-f14050b8867233a08d44.js",
+  "lateral_menu.js.map": "/packs/js/lateral_menu-f14050b8867233a08d44.js.map",
+  "search.js": "/packs/js/search-598cf2f8364bd03f7772.js",
+  "search.js.map": "/packs/js/search-598cf2f8364bd03f7772.js.map",
+  "social_media_hover.js": "/packs/js/social_media_hover-11a93f4b775cf12c8f56.js",
+  "social_media_hover.js.map": "/packs/js/social_media_hover-11a93f4b775cf12c8f56.js.map",
+  "turbolinks_audio_stop.js": "/packs/js/turbolinks_audio_stop-e93bead7bf3865d41559.js",
+  "turbolinks_audio_stop.js.map": "/packs/js/turbolinks_audio_stop-e93bead7bf3865d41559.js.map",
+  "youtube.js": "/packs/js/youtube-d3e74c9fee52f19c9d86.js",
+  "youtube.js.map": "/packs/js/youtube-d3e74c9fee52f19c9d86.js.map"
+}
