@@ -2,7 +2,7 @@
 
 <div class="container col-md-8 offset-md-2 mb-4">
   <div class="search mt-4 mb-4 text-center">
-    <%= select(nil, :post_id, Post.all.collect {|mt| [ mt.title, mt.id ] }, {:include_blank => 'Selecione sobre o que quer saber'}, id: 'dropdown', onchange: 'redirect_to_record()') %>
+    <%= select(nil, :post_id, Post.all.collect {|mt| [ mt.title, mt.slug ] }, {:include_blank => 'Selecione sobre o que quer saber'}, id: 'dropdown', onchange: 'redirect_to_record()') %>
   </div>
 
   <div class="posts">
