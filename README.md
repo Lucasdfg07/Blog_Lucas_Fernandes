@@ -74,7 +74,7 @@ Here are the technologies used in this project.
 
 The main features of the application are:
  - Publish Posts.
- - Lear a lot of information <3
+ - Learn a lot of information <3
 
 
 ## Links
