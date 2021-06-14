@@ -78,6 +78,7 @@ The main features of the application are:
 
 
 ## Links
+  - Deploy on Heroku: http://lucas-fernandes.herokuapp.com/
   - Repository: https://github.com/Lucasdfg07/Blog_Lucas_Fernandes
     - In case of sensitive bugs like security vulnerabilities, please contact
       Lucassiqueiraferandes07@gmail.com directly instead of using issue tracker. We value your effort
