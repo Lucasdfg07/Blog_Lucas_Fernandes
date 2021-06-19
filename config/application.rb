@@ -15,7 +15,6 @@ module MyPortfolio
     config.load_defaults 6.1
 
     config.hosts << "lucas-dev.com"
-    config.hosts << "www.lucas-dev.com"
     
     config.to_prepare do
       ActionText::ContentHelper.allowed_tags << "iframe"
