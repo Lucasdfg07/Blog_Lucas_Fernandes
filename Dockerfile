@@ -22,7 +22,7 @@ WORKDIR $INSTALL_PATH
 RUN chmod -R 777 $INSTALL_PATH
 
 # Copia o nosso Gemfile para dentro do container
-COPY Gemfile ./
+COPY Gemfile Gemfile.lock ./
 
 # Seta o path para as Gems
 ENV BUNDLE_PATH /gems
