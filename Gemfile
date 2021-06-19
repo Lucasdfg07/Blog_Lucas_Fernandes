@@ -6,6 +6,9 @@ ruby '3.0.0'
 # Authenticate User
 gem 'devise'
 
+# Bug Gem sassc on prod
+gem 'sassc', '~> 2.1.0'
+
 # Search
 gem 'select2-rails'
 
