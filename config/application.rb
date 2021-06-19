@@ -13,6 +13,8 @@ module MyPortfolio
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
+
+    config.hosts << "lucas-dev.com"
     
     config.to_prepare do
       ActionText::ContentHelper.allowed_tags << "iframe"
