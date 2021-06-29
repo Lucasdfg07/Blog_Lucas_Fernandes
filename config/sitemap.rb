@@ -1,5 +1,5 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "https://lucas-fernandes.herokuapp.com"
+SitemapGenerator::Sitemap.default_host = "https://lucas-dev.com"
 
 SitemapGenerator::Sitemap.create do
   add posts_path, :priority => 0.7, :changefreq => 'daily'
